@@ -9,32 +9,21 @@ It takes an input and output file name. An input file is required; otherwise, it
 
 #### Extenstions
 ```
-.zip
-.tar
-.gz
-.bz2
-.xz
-.7z
-.rar
-.cab
-.tar.gz
-.tgz
-.tar.bz2
-.tbz2
-.tar.xz
-.txz
-.zipx
-.ace
-.arj
-.lzh
-.sit
-.z
-.cbr
-.cbz
-.jar
-.txt
-.config
-.sql
+zip
+tar
+gz
+bz2
+xz
+7z
+rar
+tar.gz
+tgz
+tar.bz2
+tbz2
+tar.xz
+config
+sql
+txt
 ```
 
 
@@ -48,22 +37,18 @@ si-x1-nightly.xfinity.com
 urlredirector.xfinity.com
 ```
 
-The script will be generating the 1300 possible file names.
+The script will be generating the 255 possible file names.
 ```
+xfinity_com.gz
+xfinity.com.7z
+xfinity.com.tar.xz
+xfinity_com.tar
+xfinity_com.xz
 xfinity.com.tgz
-xfinity-com.tar
+xfinity_com.bz2
 xfinity-com.7z
-xfinity.com.cbr
-xfinity-com.sql
-XFINITY.COM.config
-xfinity-com.rar
-COM.z
-COM.gz
-XFINITY.zipx
-xfinity-com.config
-xfinity.com.txt
-xfinity.cbr
-COM.arj
+xfinity_com.tar.gz
+xfinity.com.tar.bz2
 ....
 ....
 ```
