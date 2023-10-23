@@ -13,22 +13,15 @@ except Exception as error:
 
 def gen_words(domain):
     word_lst = []
-    extenstions = [".zip",".tar",".gz",".bz2",".xz",".7z",".rar",".cab",".tar.gz",
-                  ".tgz",".tar.bz2",".tbz2",".tar.xz",".txz",".zipx",".ace",".arj",
-                  ".lzh",".sit",".z",".cbr",".cbz",".jar",".config",".sql",".txt"]
+    extenstions = [".zip",".tar",".gz",".bz2",".xz",".7z",".rar",".tar.gz",
+                  ".tgz",".tar.bz2",".tbz2",".tar.xz",".config",".sql",".txt"]
     for ext in extenstions:
         try:
             sub_lst = domain.split(".")
             t_1 = f"{domain}{ext}"
-            t_2 = f"{domain.upper()}{ext}"
-            t_3 = f"{domain.replace('.','_')}{ext}"
-            t_4 = f"{domain.replace('.','-')}{ext}"
-            for sub in sub_lst:
-                t_5 = f"{sub}{ext}"
-                t_6 = f"{sub.upper()}{ext}"
-                t_7 = f"{sub.replace('.', '_')}{ext}"
-                t_8 = f"{sub.replace('.', '-')}{ext}"
-                word_lst += [t_1,t_2,t_3,t_4,t_5,t_6,t_7,t_8]
+            t_2 = f"{domain.replace('.','_')}{ext}"
+            t_3 = f"{domain.replace('.','-')}{ext}"
+            word_lst += [t_1,t_2,t_3]
         except Exception as error:
             print(f"Error: {error}")
     word_lsts = list(set(word_lst))
@@ -50,7 +43,7 @@ try:
     file = open(input_file)
 except Exception as error:
     print(f"Error: {error}")
-    
+
 for sub in file:
     sub = sub.strip("\n")
     print(f"[+] Done: {sub}")
